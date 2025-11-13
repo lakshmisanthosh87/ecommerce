@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Details</title>
-  
-  <link rel="stylesheet" href="../css/details.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> -->
 </head>
-<body>
+<body>  <nav>
+            <a href="#" class="logo">Open_Store</a>
 
-    
-  <div class="navbar">Product Details</div>
-  <div class="details-container" id="details"></div>
+            <div class="search-box">
+                <input type="text" placeholder="Search products...">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="#">Cart</a>
+            </div>
+        </nav>
+      <div id="product" class="product-container"></div>
+      <!-- <div class="qr-code">
+  <h3>Scan to view product</h3>
+  <div id="qrcode"></div>
+</div> -->
 
+      
+     
 
-  <script src="../js/details.js"></script>
+    <script src="../js/details.js"></script>
 </body>
 </html>
