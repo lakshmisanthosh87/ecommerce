@@ -94,3 +94,10 @@ document.getElementById("searchBtn").addEventListener("click", filterProducts);
 
 // 🚀 Initialize app
 init();
+
+function updateCartCount() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const count = cart.length;
+  document.getElementById("cartCount").textContent = count;
+}
+updateCartCount();

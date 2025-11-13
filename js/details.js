@@ -167,3 +167,12 @@ qrImg.onload = () => qrCtx.drawImage(qrImg, 0, 0, 150, 150);
 qrImg.src = qrUrl;
 
 }
+
+document.getElementById("addToCartBtn").addEventListener("click", () => {
+  const product = { id: data.id, title: data.title, price: data.price, thumbnail: data.thumbnail };
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(product);
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  alert("✅ Added to cart!");
+});
