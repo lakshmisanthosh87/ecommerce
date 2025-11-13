@@ -8,12 +8,15 @@
 </head>
 <body>
   <div class="main">
+    <!-- Navbar -->
     <div class="navbar">
       <div class="logo">Flipkart Logo</div>
+
       <div class="search-bar">
-        <input type="text" placeholder="Search for products, brands and more" />
-        <button>🔍</button>
+        <input id="searchInput" type="text" placeholder="Search for products, brands and more" />
+        <button id="searchBtn">🔍</button>
       </div>
+
       <div class="nav-buttons">
         <button class="login-btn">Login</button>
         <a href="#">Become a Seller</a>
@@ -22,6 +25,10 @@
       </div>
     </div>
 
+    <!-- 🏷️ Category Bar -->
+    <div class="categories" id="categories"></div>
+
+    <!-- 🛍️ Product Cards -->
     <div class="cards" id="cards"></div>
   </div>
 

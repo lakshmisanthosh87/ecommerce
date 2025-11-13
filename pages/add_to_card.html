@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/add_to_card.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+   <div class="nav">
+      <div class="logo">
+        <h1>🛍️ Show_Mart</h1>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <button>🔍</button>
+      </div>
+
+      <div class="menu">
+   <a href="../pages/cart.html" class="cart"><span class="material-symbols-outlined">shopping_cart</span> Cart</a>
+        <a href="#">Home 🏠</a>
+      </div>
+    </div>
+
+
+
+    <main class="cart-wrapper">
+    <!--  Left: Cart Items -->
+    <section class="cart-section">
+      <h2>My Cart 🛒</h2>
+      <div id="cartItems"></div>
+    </section>
+
+    <!--  Right: Price Summary -->
+    <aside class="summary-section">
+      <h3>PRICE DETAILS</h3>
+      <div id="priceDetails"></div>
+      <button id="checkoutBtn">Place Order</button>
+    </aside>
+  </main>
+    <script src="../js/add_to_card.js"></script>
+</body>
+</html>
